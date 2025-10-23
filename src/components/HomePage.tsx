@@ -33,7 +33,6 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               <ChevronRight className="w-4 h-4 text-gray-400" />
             </div>
             <button className="bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-1 rounded-full text-sm font-medium">
-              推銷師
             </button>
           </div>
           <div className="mb-4">
