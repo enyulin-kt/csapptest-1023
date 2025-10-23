@@ -104,7 +104,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 合約到期日：2026/03/01
               </div>
               <div className="flex items-center gap-3">
-                <button className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium shadow-md">
+                <button onClick={() => onNavigate('renewal')} className="bg-blue-600 text-white px-6 py-2 rounded-lg font-medium shadow-md">
                   我要續約
                 </button>
                 <span className="text-blue-600 text-xl font-bold">$999</span>
@@ -126,7 +126,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
                 <span className="text-gray-800">家戶WIFI：</span>
                 <span className="text-gray-800 font-bold">正常</span>
               </div>
-              <button className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-lg font-medium shadow-md">
+              <button onClick={() => onNavigate('repair')} className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2 rounded-lg font-medium shadow-md">
                 線上報修
               </button>
             </div>

@@ -5,6 +5,8 @@ import OnlineRepair from './pages/OnlineRepair';
 import ServiceLocations from './pages/ServiceLocations';
 import ProductStore from './pages/ProductStore';
 import MyServices from './pages/MyServices';
+import Payment from './pages/Payment';
+import Renewal from './pages/Renewal';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -25,6 +27,8 @@ function App() {
       {currentPage === 'locations' && <ServiceLocations onBack={handleBack} />}
       {currentPage === 'store' && <ProductStore onBack={handleBack} />}
       {currentPage === 'services' && <MyServices onBack={handleBack} />}
+      {currentPage === 'payment' && <Payment onBack={handleBack} />}
+      {currentPage === 'renewal' && <Renewal onBack={handleBack} />}
     </>
   );
 }
